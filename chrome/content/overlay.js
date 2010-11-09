@@ -40,9 +40,11 @@ var fireup = {
 		// Initialize preferences:
 		var prefservice = this.Cc["@mozilla.org/preferences-service;1"].getService(this.Ci.nsIPrefService);
 		this.branch = prefservice.getBranch("extensions.fireup.");
+		// var value = this.branch.getCharPref("value");
 
 		// Initialize strings:
 		this.bundle = document.getElementById("fireup-strings");
+		// var str = this.bundle.getString("fireupSomeString");
 	},
 
 	// Shutdown:
