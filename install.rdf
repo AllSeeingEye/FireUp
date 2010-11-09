@@ -10,6 +10,7 @@
 		<em:creator>Dmitriy Khudorozhkov</em:creator>
 		<em:description>Boilerplate code for new Firefox extensions.</em:description>
 		<em:homepageURL>https://github.com/AllSeeingEye/FireUp</em:homepageURL>
+		<em:optionsURL>chrome://fireup/content/options.xul</em:optionsURL>
 
 		<em:targetApplication>
 			<Description>
