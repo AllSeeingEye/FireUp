@@ -33,9 +33,13 @@ var fireup = {
 	// Shortcuts:
 	Cc: Components.classes,
 	Ci: Components.interfaces,
+	Cr: Components.results,
 
 	// Preference branch for the extension:
 	branch: null,
+
+	// String bundle for the extension:
+	bundle: null,
 
 	// Initialization:
 	init: function()
@@ -43,6 +47,9 @@ var fireup = {
 		// Initialize preferences:
 		var prefservice = this.Cc["@mozilla.org/preferences-service;1"].getService(this.Ci.nsIPrefService);
 		this.branch = prefservice.getBranch("extensions.fireup.");
+
+		// Initialize strings:
+		this.bundle = document.getElementById("fireup-strings");
 	},
 
 	// Shutdown:
