@@ -1,0 +1,8 @@
+FireUp is a base for Firefox 3.6/4.0b8pre-compatible extensions. Contained
+within are established directory and file structure, basic preference and
+locale data; overlay script ensures extension startup, shutdown and
+initialization of preference access branch.
+
+MIT license is used throughout the code.
+
+Developed by Dmitriy Khudorozhkov (dmitriy.khudorozhkov@gmail.com).

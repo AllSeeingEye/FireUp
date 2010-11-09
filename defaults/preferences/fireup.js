@@ -1,0 +1,1 @@
+pref("extensions.fireup.value", "uh-oh");
