@@ -1,11 +1,10 @@
 ﻿FireUp is a skeleton of Firefox 3.6.*/4.0b8pre-compatible extension. Contained
-within are the established directory and file structure with top-level
-directories for XPCOM components ("components"), JavaScript code modules
-("modules"), and plugins ("plugins"); sample preference and locale data.
+within are the established directory and file structure with top-level folders
+for XPCOM components ("components"), JavaScript code modules ("modules"), and
+plugins ("plugins"). Overlay script ensures extension startup, initialization
+of preference branch and string bundle access, shutdown.
 
-Overlay script ensures extension startup, initialization of preference branch
-access and string bundle access, shutdown. Simple options screen comes as a
-bonus.
+Sample preference, locale data and a simple options screen come as a bonus.
 
 MIT license is used throughout the code.
 
