@@ -31,6 +31,9 @@ var fireup = {
 	// Preference branch for the extension:
 	branch: null,
 
+	// Preference listener:
+	prefListener: null,
+
 	// String bundle for the extension:
 	bundle: null,
 
@@ -42,15 +45,62 @@ var fireup = {
 		this.branch = prefservice.getBranch("extensions.fireup.");
 		// var value = this.branch.getCharPref("value");
 
+		// Initialize preference change listener:
+		this.initPrefListener();
+
 		// Initialize strings:
 		this.bundle = document.getElementById("fireup-strings");
 		// var str = this.bundle.getString("fireupSomeString");
 	},
 
+	// Startup of preference listener:
+	initPrefListener: function()
+	{
+		var self = this;
+
+		// Listener object:
+		function prefChangedListener(branch, callback)
+		{
+			branch.QueryInterface(self.Ci.nsIPrefBranch2);
+			branch.addObserver("", this, false);
+
+			branch.getChildList("", { }).forEach(function(name) { callback(branch, name); });
+
+			this.unregister = function()
+			{
+				if(branch)
+					branch.removeObserver("", this);
+			};
+
+			this.observe = function(subject, topic, data)
+			{
+				// Only track change events:
+				if(topic == "nsPref:changed")
+					callback(branch, data);
+			};
+		}
+
+		// Listener callback (note that it called not only on
+		// preference change, but also on the browser startup):
+		function listenerCallback(branch, name)
+		{
+			switch(name)
+			{
+				case "value":	
+					//let value = branch.getCharPref(name);
+					break;
+			}
+		}
+
+		// Initialize:
+		this.prefListener = new prefChangedListener(this.branch, listenerCallback);
+	},
+
 	// Shutdown:
 	uninit: function()
 	{
-	}
+		this.prefListener.unregister();
+	},
 };
 
 window.addEventListener("load",   function() { fireup.init();  }, false);
