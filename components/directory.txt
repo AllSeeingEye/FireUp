@@ -1,5 +1,6 @@
-This is the directory for XPCOM components. For the info on these, please see
-the following pages:
+This is the directory for XPCOM components; if you don't use them, you can
+delete the directory. For the info on components, please see the following
+pages:
 
 https://developer.mozilla.org/en/xpcom
 https://developer.mozilla.org/en/Code_snippets/JS_XPCOM
