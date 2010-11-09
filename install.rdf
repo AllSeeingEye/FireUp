@@ -5,6 +5,7 @@
 
 		<em:id>fireup@example.org</em:id>
 		<em:name>FireUp</em:name>
+		<em:type>2</em:type>
 		<em:version>0.12</em:version>
 		<em:creator>Dmitriy Khudorozhkov</em:creator>
 		<em:description>Boilerplate code for new Firefox extensions.</em:description>

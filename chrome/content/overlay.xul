@@ -34,7 +34,7 @@
 <overlay id="fireup-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 	<stringbundleset id="stringbundleset">
-		<stringbundle id="fireup-strings" src="fireup.properties"/>
+		<stringbundle src="chrome://fireup/locale/fireup.properties" id="fireup-strings" />
 	</stringbundleset>
 
 	<script type="text/javascript" src="overlay.js" />
