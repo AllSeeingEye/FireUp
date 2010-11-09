@@ -34,6 +34,7 @@ var fireup = {
 	Cc: Components.classes,
 	Ci: Components.interfaces,
 	Cr: Components.results,
+	Cu: Components.utils,
 
 	// Preference branch for the extension:
 	branch: null,

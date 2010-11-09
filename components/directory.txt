@@ -1,0 +1,5 @@
+This is the directory for XPCOM components. For the info on these, please see
+the following pages:
+
+https://developer.mozilla.org/en/xpcom
+https://developer.mozilla.org/en/Code_snippets/JS_XPCOM

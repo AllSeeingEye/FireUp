@@ -1,0 +1,4 @@
+This is the directory for plugins. For the info on these, please see the
+following page:
+
+https://developer.mozilla.org/En/Plugins
