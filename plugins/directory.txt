@@ -1,4 +1,4 @@
-This is the directory for plugins; if you don't use them, you can delete the
+﻿This is the directory for plugins; if you don't use them, you can delete the
 directory. For the info on plugins, please see the following page:
 
 https://developer.mozilla.org/En/Plugins

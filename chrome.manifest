@@ -1,4 +1,4 @@
-content	fireup	chrome/content/
+﻿content	fireup	chrome/content/
 locale	fireup	en-US	chrome/locale/en-US/
 skin	fireup	classic/1.0	chrome/skin/
 overlay	chrome://browser/content/browser.xul	chrome://fireup/content/overlay.xul

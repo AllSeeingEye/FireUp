@@ -1,4 +1,4 @@
-This is the directory for JavaScript core modules; if you don't use them, you
+﻿This is the directory for JavaScript core modules; if you don't use them, you
 can delete the directory. For the info on modules, please see the following
 page:
 

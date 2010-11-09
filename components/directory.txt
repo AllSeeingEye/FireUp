@@ -1,4 +1,4 @@
-This is the directory for XPCOM components; if you don't use them, you can
+﻿This is the directory for XPCOM components; if you don't use them, you can
 delete the directory. For the info on components, please see the following
 pages:
 

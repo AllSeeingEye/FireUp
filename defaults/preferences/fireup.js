@@ -1,1 +1,1 @@
-pref("extensions.fireup.value", "uh-oh");
+﻿pref("extensions.fireup.value", "uh-oh");
