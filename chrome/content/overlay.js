@@ -69,14 +69,18 @@ var fireup = {
 			this.unregister = function()
 			{
 				if(branch)
+				{
 					branch.removeObserver("", this);
+				}
 			};
 
 			this.observe = function(subject, topic, data)
 			{
 				// Only track change events:
 				if(topic == "nsPref:changed")
+				{
 					callback(branch, data);
+				}
 			};
 		}
 
@@ -86,7 +90,7 @@ var fireup = {
 		{
 			switch(name)
 			{
-				case "value":	
+				case "value":
 					//let value = branch.getCharPref(name);
 					break;
 			}
@@ -100,8 +104,8 @@ var fireup = {
 	uninit: function()
 	{
 		this.prefListener.unregister();
-	},
+	}
 };
 
-window.addEventListener("load",   function() { fireup.init();  }, false);
-window.addEventListener("unload", function() { fireup.uninit() }, false);
+window.addEventListener("load",   function() { fireup.init();   }, false);
+window.addEventListener("unload", function() { fireup.uninit(); }, false);
