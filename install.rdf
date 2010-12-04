@@ -20,5 +20,14 @@
 			</Description>
 		</em:targetApplication>
 
+		<em:localized>
+			<Description>
+				<em:locale>ru</em:locale>
+				<em:name>FireUp</em:name>
+				<em:description>Заготовка для расширения.</em:description>
+				<em:creator>Дмитрий Худорожков</em:creator>
+			</Description>
+		</em:localized>
+
 	</Description>
 </RDF>

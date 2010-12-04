@@ -2,5 +2,6 @@ content	fireup	chrome/content/
 content	fireup-modules	modules/
 content	fireup-defaults	defaults/
 locale	fireup	en-US	chrome/locale/en-US/
+locale	fireup	ru	chrome/locale/ru/
 skin	fireup	classic/1.0	chrome/skin/
 overlay	chrome://browser/content/browser.xul	chrome://fireup/content/overlay.xul
