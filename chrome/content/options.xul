@@ -26,7 +26,9 @@
 
 <prefwindow id="fireup-prefs" title="&fireup.options.title;" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-	<prefpane id="fireup-pref-pane" label="&fireup.options.settings;">
+	<script type="text/javascript" src="options.js" />
+
+	<prefpane id="fireup-pref-pane" label="&fireup.options.settings;" onpaneload="fireup.options.onload();">
 
 		<preferences>
 			<preference id="fireup_pref_value" name="extensions.fireup.value" type="string" />

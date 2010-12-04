@@ -64,6 +64,8 @@ var fireup = {
 			branch.QueryInterface(self.Ci.nsIPrefBranch2);
 			branch.addObserver("", this, false);
 
+			// The line below queries all extension's preferences at browser start-up.
+			// Comment the line if you don't want it.
 			branch.getChildList("", { }).forEach(function(name) { callback(branch, name); });
 
 			this.unregister = function()
@@ -84,8 +86,7 @@ var fireup = {
 			};
 		}
 
-		// Listener callback (note that it called not only on
-		// preference change, but also on the browser startup):
+		// Listener callback:
 		function listenerCallback(branch, name)
 		{
 			switch(name)
